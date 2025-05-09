@@ -5,25 +5,125 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/global.css">
     <link rel="stylesheet" href="./styles/main.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="icon" type="image/x-icon" href="./media/fmsLogoCropped.png">
     <title>FMS</title>
 </head>
 <body>
     <nav>
         <ul>
             <li>Home</li>
+            <a href="#aboutUsMore">
             <li id="aboutUs">About Us</li>
+            </a>
         </ul>
     </nav>
+    
+    <section id="hero">
+        <div id="mainContent">
+        <video autoplay loop muted playsinline id="bgVideo">
+            <source src="./media/landingVideo1.mp4" type="video/mp4">
+        </video>
 
-    <div id="mainContent">
-    <video autoplay loop muted playsinline id="bgVideo">
-        <source src="./media/landingVideo1.mp4" type="video/mp4">
-    </video>
+        <div id="downloadNow">
+            <h1>Real time company<br> management app</h1>
+            <a href="https://github.com/KKIvanov22/FMS/releases/download/Release/FMS.Setup.0.1.0.exe">
+            <button>Download Now!</button>
+        </a>
+        </div>
+    </section>
 
-    <div id="downloadNow">
-        <h1>The first real time company<br> management app.</h1>
-        <button>Download Now!</button>
-    </div>
+    <section id="more">
+        <div id="theApp">
+            <div id="text">
+                <h1>More about the App...</h1>
+                <h2>Our app is a smart company management system that helps 
+                    you organize employees, track projects, manage finances, 
+                    and streamline daily operations—all from one easy-to-use platform.
+                </h2>
+            </div>
+
+            <div id="image">
+                <img src="./media/mac.png" alt="">
+            </div>
+        </div>
+
+        <div id="aboutUsMore">
+            <div id="image">
+                <img src="./media/aboutUs.png" alt="">
+            </div>
+
+            <div id="text">
+                <h1>About our team</h1>
+                <h2>We are two 16 y/o high school students from Burgas, who aim 
+                    to be software engeneers someday. We got inspired to do this project by 
+                    other bigger companies and we tried to make some changes and add some new features.
+                </h2>
+            </div>
+        </div>
+
+        <div id="features">
+            <h1 id="reviewsTitle">
+                Reviews:
+            </h1>
+        </div>  
+
+        <div id="reviews">
+            <div id="review">
+                <img src="./media/pfp.png" alt="">
+                <div id="text">
+                    <h2 id="yellowH2">John Sulivan ⭐️⭐️⭐️⭐️⭐️</h2>
+                    <h2>“Our HR department has become far more efficient since we started using this company management system. It’s easy to track employee records, manage leave requests, and onboard new hires—all in one place. The intuitive dashboard and automated reminders help us stay on top of everything. Highly recommended for any growing organization.”
+                    </h2>
+                </div>
+            </div>
+        </div>
+
+        <div id="reviews">
+            <div id="review">
+                <img src="./media/pfp.png" alt="">
+                <div id="text">
+                    <h2 id="yellowH2">Danieal Dubrovski ⭐️⭐️⭐️⭐️☆</h2>
+                    <h2>“This app has really improved team coordination and performance tracking. I can assign tasks, set deadlines, and monitor progress without juggling multiple tools. The communication features could use a bit more customization, but overall it’s been a game-changer for managing team productivity."
+                    </h2>
+                </div>
+            </div>
+        </div>
+
+        <div id="reviews">
+            <div id="review">
+                <img src="./media/pfp.png" alt="">
+                <div id="text">
+                    <h2 id="yellowH2">Georgi Petrov ⭐️⭐️⭐️⭐️⭐️</h2>
+                    <h2>“From an IT standpoint, this system is secure, reliable, and easy to maintain. Integration with our existing infrastructure was smooth, and the admin controls are detailed and flexible. It also has excellent data backup and user access features. Support response has been prompt and helpful whenever needed.”
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div id="footerContent">
+            <p>&copy; 2025 FMS. All rights reserved.</p>
+            <p>Developed by Simeon Stefanov & Kaloyan Ivanov</p>
+        </div>
+    </footer>
 </div>
+
+<script>
+    ScrollReveal({
+    distance: '60px',
+    duration: 2000,
+    delay: 400
+});
+ScrollReveal().reveal('#theApp h1', {delay: 100})
+ScrollReveal().reveal('#theApp h2', {delay: 100})
+ScrollReveal().reveal('#theApp img', {delay: 100})
+ScrollReveal().reveal('#aboutUsMore h1', {delay: 100})
+ScrollReveal().reveal('#aboutUsMore h2', {delay: 100})
+ScrollReveal().reveal('#aboutUsMore img', {delay: 100})
+ScrollReveal().reveal('#reviews div', {delay: 100})
+
+</script>
 </body>
 </html>
