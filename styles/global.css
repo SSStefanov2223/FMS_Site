@@ -5,3 +5,7 @@
     font-family: 'sans-serif', Arial Black, sans-serif;
     overflow: scroll;
 }
+
+*::-webkit-scrollbar{
+    display:none;
+}
